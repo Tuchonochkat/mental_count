@@ -1,0 +1,28 @@
+header {
+    background-image: url(header.jpg);
+    padding: 10px;
+    margin: auto;
+}
+
+aside > h2 {
+    background-color: #e7ceb8;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}   
+
+aside {
+    display: inline-block;
+    width: 270px;
+    background-color: #e9e4db;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-right: 10px;
+    float: left;
+}
+
+h1 {
+    color:  #e9e4db;
+}
+

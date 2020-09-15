@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Устный счёт</title>
+    <script type="text/javascript" src={% static "js/main.js" %}></script>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+<header>
+    <h1>Устный счёт</h1>
+
+</header>
+
+<aside>
+    <h4>Хочу составить задание для учеников</h4>
+    <div class='block_content'>
+        <ul class='menu'>
+            <li class='leaf'><a href='block'>Несколько примеров</a></li>
+            <li class="leaf"><a href='snake'>Змейка примеров</a></li>
+        </ul>
+    </div>
+    <h4>Хочу решать задания сам</h4>
+</aside>
+<div id = "PageInfo"><p>Упражнения для тренировки навыка устного счёта учеников 1-7 классов.</p>
+    <p>Составление вариантов устного счёта для учителей.</p>
+    <p> Задания для самостоятельной тренировки.</p>
+    <div>
+        <label for="numberOfTasks">К-во примеров</label>
+        <input
+            type="number"
+            max="20"
+            min="1"
+            name="numberOfTasks"
+            value="10"
+            onkeypress="return runScript(event)">
+        <label for="numberOfDigits">К-во разрядов</label>
+        <input
+            type="number"
+            max="5"
+            min="1"
+            name="numberOfDigits"
+            value="3"
+            onkeypress="return runScript(event)">
+        <button onclick="showResult()">ok</button>
+    </div>
+    <table id = "blockOfTasks"></table>
+</div>
+</body>
+</html>
