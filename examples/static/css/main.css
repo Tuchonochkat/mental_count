@@ -4,25 +4,58 @@ header {
     margin: auto;
 }
 
-aside > h2 {
-    background-color: #e7ceb8;
-    margin-top: 0px;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-bottom: 10px;
-}   
-
-aside {
-    display: inline-block;
-    width: 270px;
-    background-color: #e9e4db;
-    padding-top: 0px;
-    margin-top: 0px;
-    margin-right: 10px;
-    float: left;
+body {
+    background-color:  #e9e4db;
 }
 
 h1 {
     color:  #e9e4db;
 }
 
+#tile {
+    display: block;
+}
+
+#tile ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#tile li {
+    display: inline-block;
+    padding: 5px 0;
+    margin-left: 5px;
+}
+
+#tile li a {
+    display: inline-block;
+    color:  #e9e4db;
+    text-decoration: none;
+    padding: 2px 7px;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+a:visited {
+    color: #90278E;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
